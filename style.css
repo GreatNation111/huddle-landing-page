@@ -20,9 +20,8 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.content{
+.content-container{
     width:100vw;
-    height: 100vh; 
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -40,7 +39,7 @@ body{
     margin: 1.5rem;
 }
 
-#Logo>img{
+header>img{
     width: 8rem;
     margin: 1.5rem;
 }
@@ -53,6 +52,7 @@ body{
    justify-content: center;
    align-items: center;
    text-align: center;
+   
 }
 
 .text>p{
@@ -80,7 +80,8 @@ body{
        display: flex;
        flex-direction: row;
        justify-content: center;
-       margin-top: 4rem;
+       margin: 2rem;
+       
 }
 .social-logos>img{
        width: 25px;
@@ -96,3 +97,66 @@ body{
 .attribution a {
       color: hsla(215, 52%, 70%, 0.846);
 }
+
+ /* desktop */
+ @media only screen and (min-width:768px){
+    body{
+        background-color:hsl(257, 40%, 49%);
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+     background-image: url("images/bg-mobile.svg");
+         background-repeat: no-repeat;
+         background-size:cover; 
+         background-position: left;
+    }
+    .content-container{
+        width:100vw;
+        height: 70vh;
+        display: flex; 
+        flex-direction:row ;
+        align-items: center;
+        margin-top: 3.5rem;
+    }
+    .image-container{
+        width:50%;  
+        background-image: none;
+    }
+    .image-container>img{
+        width:30rem;
+        margin: 1.5rem;
+    }
+    .text{
+        color: white;
+        padding: 3rem;
+        margin-top: 4rem;
+        margin-right: 3rem;
+        display: flex;
+        flex-direction: column;
+        text-align:start;
+        width:50%;
+     }
+    .text>p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    line-height:1.2;
+    
+   }
+   .text>h1{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+    .button{
+        margin-top: 1rem;
+        width: 100%;
+    }
+   .social-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    padding: 2rem;
+    margin: 0;
+    width: 100vw;
+    
+  }
+ }
