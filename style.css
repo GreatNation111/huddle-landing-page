@@ -10,26 +10,21 @@ body{
     font-family: 'Poppins', sans-serif;
 
 }
-.container{
-    width: 100%;
-    height: 100%;
-    margin:0;
-    padding:0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .content-container{
     width:100vw;
     display: flex; 
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin:0;
+    padding:0;
 
 }
 .image-container{
     width:100%;
-    padding: 1rem;
+    padding: 1.5rem;
     background-image: url("images/bg-mobile.svg");
     background-repeat: no-repeat;
     background-size:cover; 
@@ -40,13 +35,15 @@ body{
 }
 
 header>img{
-    width: 8rem;
+    width: 10rem;
     margin: 1.5rem;
+
 }
 
 .text{
    color: white;
-   padding: 1rem;
+   padding: 1.5rem;
+   margin: 2rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -56,13 +53,14 @@ header>img{
 }
 
 .text>p{
-    margin:1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18.5px;
+    font-size: 18px;
 }
 .text>h1{
     font-family: 'Poppins', sans-serif;
-    line-height: 1.2;
+    line-height: 1.5;
 
 }
 
@@ -72,7 +70,7 @@ header>img{
     padding:0.5rem 4.5rem 0.5rem 4.5rem;
     border-radius: 1rem;
     text-align: center;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.475);
     
 }
@@ -80,18 +78,20 @@ header>img{
        display: flex;
        flex-direction: row;
        justify-content: center;
-       margin: 2rem;
-       
+       margin-top: 5rem;
+       width: 100%;
+ 
 }
 .social-logos>img{
        width: 25px;
        margin-right: 9px;
+       margin-top: 5rem;
 }
 
 .attribution{
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
-    justify-self: flex-end;
+    align-content: flex-end;
     color:white;
 }
 .attribution a {
@@ -110,45 +110,52 @@ header>img{
          background-position: left;
     }
     .content-container{
-        width:100vw;
-        height: 70vh;
+        width:100%;
+        height: 100%;
         display: flex; 
         flex-direction:row ;
+        justify-content: center;
         align-items: center;
-        margin-top: 3.5rem;
+        margin-top: 4rem;
     }
     .image-container{
-        width:50%;  
+        width:45rem;  
         background-image: none;
+        padding: 0;
+        margin: 0;
     }
     .image-container>img{
-        width:30rem;
-        margin: 1.5rem;
+        width:40rem;
+    
     }
     .text{
         color: white;
-        padding: 3rem;
-        margin-top: 4rem;
-        margin-right: 3rem;
+        padding: 1rem;
         display: flex;
         flex-direction: column;
-        text-align:start;
-        width:50%;
+        text-align:left;
+        margin:0;
+        width:40rem;
      }
     .text>p{
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
+    margin-top: 1rem;
     line-height:1.2;
+    font-size: 20px;
     
    }
    .text>h1{
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    font-size:50px;
 }
     .button{
         margin-top: 1rem;
-        width: 100%;
+        width:100%;
+    }
+    button{
+        width: 12rem;
+        text-align: center;
     }
    .social-logos{
     display: flex;
@@ -159,4 +166,9 @@ header>img{
     width: 100vw;
     
   }
+  .social-logos>img{
+    width: 25px;
+    margin-right: 10px;
+    margin-top:0;
+}
  }
